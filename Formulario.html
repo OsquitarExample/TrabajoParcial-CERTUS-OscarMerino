@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <title>Ejercicio Login</title>
+
+    <!-- Agregar el Estilo Personalizado -->
+    <link rel="stylesheet" href="custom.css">
+ 
+</head>
+
+<body>
+
+  <main class="pageform">
+  <!-- Formulario para la creación de una cuenta-->  
+  <form id="formCreateAccount" action="BaseDatos.html" method="post">
+    
+    <!--Titulo de la Página-->
+    <h2 id="CrearCuenta">Crear Cuenta</h2>
+
+    <!-- Entrada Nombre-->
+    <div>
+        <label for="txtName">Nombre:</label>
+        <input class="formElement" type="text" name="FirstName" id="txtName" maxlength="30" required style="width: 99%">
+    </div>
+
+    <!-- Entrada Apellido-->
+    <div>
+        <label for="txtSurname"> Apellido: </label>
+        <input class="formElement" type="text" name="LastName" id="txtSurname" maxlength="50" required>
+    </div>
+
+    <!-- Entrada DNI-->
+    <div>
+        <label for="intDNI"> DNI: </label>
+        <input class="formElement" type="tel" name="DNI" id="intDNI" maxlength="8" required>
+    </div>
+
+    <!--Entrada Email-->
+    <div>
+        <label for="txtEmail"> E-Mail: </label>
+        <input class="formElement" type="email" name="Email" id="txtEmail" maxlength="100" required>
+    </div>
+
+    <!-- Entrada Fecha de Nacimiento-->
+    <div>
+      <label for="txtFechaNacimiento"> Fecha de Nacimiento: </label> 
+      <input type="date" name="FechaNacimiento" id="txtFechaNacimiento" min="1970-12-31" max="2005-12-31" required>
+    </div>
+
+    <!-- Sexo -->
+    <div>
+      <p>Sexo</p>
+      <input type="radio" name="sexo" id="bolMasculino" value="M" checked>
+      <label for="bolMasculino" style="display:inline">Masculina</label>
+      <input type="radio" name="sexo" id="bolFemenina" value="F">
+      <label for="bolFemenina" style="display:inline">Femenina</label>
+      
+
+    </div>
+
+    <!-- Entrada Usuario -->
+    <div>
+      <label for="txtUsuario"> Usuario:</label>
+      <input class="formElement" type="text" name="Usuario" id="txtUsuario" required>
+    </div>
+
+    <!-- Entrada Contraseña-->
+    <div> 
+      <label for="txtPassword"> Contraseña: </label>
+      <input class="formElement" type="password" name="Contraseña" id="txtPassword" required>
+    </div>
+  
+    <!-- Entrada Telefono -->
+    <div>
+      <label for="txtPhone"> Telefono / Celular: </label>
+      <input class="formElement" type="tel" name="Telefono" id="txtPhone" maxlength="13" >
+    </div>
+
+    <!-- Entrada Dirección-->
+    <div>
+      <label for="txtDireccion"> Dirección: </label>
+      <input class="formElement" type="text" name="Address1" id="txtDireccion" placeholder="Ejm: Av. San Benito" maxlength="100"> <br>
+      <input class="formElement" type="text" name="Address2" id="txtDireccion2" placeholder="Ejm: Lima" maxlength="100">
+    </div>
+
+    <!-- Entrada Checkbox Terminos y Condiciones -->
+    <div>
+      <input type="checkbox" id="bolAceptar"required>
+      <label for="bolAceptar" style="display:inline-block"> Acepta los <a href="#">Terminos y Condiciones</a></label>
+    </div>
+
+
+    <!-- Entrada Submit -->
+    <div>
+      <button type="submit"> Enviar</button>
+    </div>
+
+  </main>
+
+  </form>
+ 
+
+
+
+
+</body>
+</html>
